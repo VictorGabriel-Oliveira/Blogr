@@ -216,7 +216,7 @@ main h1{
 #illustration-editor-desktop{
     height: 700px;
     transform: translate(40%);
-    
+   
     
 }
 
@@ -315,6 +315,10 @@ footer img{
 }
 
 @media (max-width: 1000px) {
+
+    li {
+        margin-top: 10px;
+    }
     header{
         display: flex;
         height: auto;
@@ -331,16 +335,15 @@ footer img{
         background-size:cover; 
         background-repeat: no-repeat;
         background-position:right;
-   
+        position: relative;
         
     }
     
     .firstHeader{
          display: flex;
          flex-direction: column;
-         justify-content: space-between;
-         margin-right:50px;
-         margin-left:50px;
+         justify-content: space-around;
+         
         
     }
     #logo{
@@ -351,6 +354,7 @@ footer img{
         display: block;
         margin: 10px;
         height: 30px;
+        
     }
     #close{
         margin: 10px;
@@ -379,10 +383,15 @@ footer img{
         background-color: #fafafa;
         height: auto;
         width: 80vw;
+        left: 10vw;
         color: #24242c;
         border-radius: 10px;
         text-align: center;
         font-size: 20px;
+        position: fixed;
+        top: 10vh;
+        border: 1px solid #344a5f;
+        z-index: 100;
         
         
     }
@@ -439,15 +448,20 @@ footer img{
         justify-content: center;
         color:white;
         overflow: hidden;
-    
+        
     }
 
     .secondHeader h1{
-        margin-top: 70px;
+        margin-top: 10px;
         font-size: 30px;
+        width: 80vw;
+        text-align: center;
     }
 
-
+    .secondHeader p{
+        width: 80vw;
+        text-align: center;
+    }
     
 
     .first--content{
